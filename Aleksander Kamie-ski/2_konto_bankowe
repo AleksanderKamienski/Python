@@ -1,0 +1,29 @@
+
+imie = "Arnold"
+haslo = "icra2013"
+saldo = 2130
+
+while True:
+    x = input("Wprwadz nazwę konta")
+    if x ==imie:
+        y = input("Wprwadz hasło")
+        if y == haslo:
+            print("Zalogowałeś się do konta bankowego. Stan Twojego konta wynosi:  %s ",saldo)
+            x = input("Czy chcesz wpłącić pieniądze na konto? jesli chcesz napisz 'tak'")
+            if(x=="tak"):
+                x = int(input("Ile pieniedzy chcesz wpłacić na konto?"))
+                saldo = saldo+x
+
+            x = input("Czy chcesz wypłacić pieniądze z konta? jesli chcesz napisz 'tak'")
+            if (x == "tak"):
+                x = int(input("Ile pieniedzy chcesz wypłacić z konta?"))
+                if x>saldo:
+                    print("Idz do pracy, nie masz tyla kasy!")
+                else:
+                    saldo=saldo-x
+
+
+        else:
+            break
+    else:
+        break

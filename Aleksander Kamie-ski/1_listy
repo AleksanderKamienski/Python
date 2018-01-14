@@ -1,0 +1,23 @@
+##pierwsze
+
+##1.1
+lista = ["Aleksander Kamieński", "Paweł Lipert", "Damian Puc"]
+lista.sort()
+##1.2
+print(lista)
+
+##drugie
+
+##2.1
+lista2 = [("Krzysiek", 30), ("Alek", 10), ("Marek",20)]
+
+##2.2
+sum =0
+for x in lista2:
+    sum+=x[1]
+print("średni wiek to:", sum/len(lista2))
+
+##2.3
+lista2.sort(key=lambda x: x[1])
+lista2.reverse()
+print(lista2)

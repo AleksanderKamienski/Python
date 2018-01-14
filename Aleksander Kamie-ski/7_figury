@@ -1,0 +1,34 @@
+class Figury():
+
+   def __init__(self, kolor,x,y):
+        self.kolor=kolor
+        self.x = x
+        self.y=y
+
+   def trapez(self):
+
+       print("Czesc, tu trapez, moj kolor jest nastepujacy:", self.kolor)
+       print("A moje pole ma taką wartość:", ((self.x+self.y)/2)*10)
+
+   def prostokat(self):
+
+       print("Czesc, tu prostokat, moj kolor jest nastepujacy:", self.kolor)
+       print("A moje pole ma taką wartość:", self.x * self.y)
+
+   def trojkat_prostokatny(self):
+
+       print("Czesc, tu trojkat_prostokatny, moj kolor jest nastepujacy:", self.kolor)
+       print("A moje pole ma taką wartość:", (self.x * self.y) / 2)
+
+   def romb(self):
+
+       print("Czesc, tu romb, moj kolor jest nastepujacy:", self.kolor)
+       print("A pole zależy od kąta pomiędzy ramieniami, nie jest jednoznacznie okreslone")
+
+
+x = Figury("czerwony", 10,10)
+
+print(x.trapez())
+print(x.prostokat())
+print(x.trojkat_prostokatny())
+print(x.romb())

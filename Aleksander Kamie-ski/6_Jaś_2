@@ -1,0 +1,7 @@
+x= float(input("Podaj czas ruchu Jaśka w sekundach"))
+if x>100:
+    t = complex(3*100, 2*100)
+    print("Jasiek przeszedł już całą drogę - ",abs(t),"metrów")
+else:
+    t = complex(3*x, 2*x)
+    print("Jasiek przeszedł" ,abs(t) ,"metrów")

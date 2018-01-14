@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+#define N 10
+int main()
+{
+    bool k=true;
+    int tmp=0;
+    int t[N]={1,5,2,6,7,8,4,1,9,7};
+    while (k)//petla bedzie sie wykonywala az po calym przejsciu po tablicy zadna liczba nie zamieni sie miejscami
+    { 
+        k=false;
+        for (int i=0;i<N-1;i++)
+        {
+            if (t[i]>t[i+1])
+            {
+                tmp=t[i];
+                t[i]=t[i+1];
+                t[i+1]=tmp;
+                k=true;
+            }
+        }
+    }
+//print
+   for(int i=0;i<N;i++)
+   cout<<t[i];
+    cout<<endl;
+
+    return 0;
+}

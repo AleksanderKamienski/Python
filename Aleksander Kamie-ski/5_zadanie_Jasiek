@@ -1,0 +1,5 @@
+t= float(input("Podaj czas ruchu Jaśka w sekundach"))
+if t>100:
+    print("Jasiek przeszedł już całą drogę - 380m")
+else:
+    print("Jasiek przeszedł" ,3.8*t ,"metrów")

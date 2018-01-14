@@ -1,0 +1,9 @@
+i=0
+
+for x in range(1,101):
+    for y in range(1,x):
+        if x%y==0 and y!=1 and y!=x:
+            i=i+1 ##jesli znajdzie sie liczba ktora dzieli x oraz nie jest rowna x ani jeden to naliczy nam sie licza "i"
+    if i==0:     ##jesli okaze sie ze jedynymi dzielnikami liczby x sa 1 i x to mamy liczbe pierwsza
+        print(x)
+    i=0 
